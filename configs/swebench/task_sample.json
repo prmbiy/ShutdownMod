@@ -1,0 +1,256 @@
+{
+  "seed": 67,
+  "n": 50,
+  "tasks": [
+    {
+      "instance_id": "astropy__astropy-13398",
+      "docker_repo": "swebench/sweb.eval.x86_64.astropy_1776_astropy-13398",
+      "compressed_bytes": 1092160603
+    },
+    {
+      "instance_id": "astropy__astropy-13977",
+      "docker_repo": "swebench/sweb.eval.x86_64.astropy_1776_astropy-13977",
+      "compressed_bytes": 1095092729
+    },
+    {
+      "instance_id": "astropy__astropy-7336",
+      "docker_repo": "swebench/sweb.eval.x86_64.astropy_1776_astropy-7336",
+      "compressed_bytes": 1071062363
+    },
+    {
+      "instance_id": "astropy__astropy-8707",
+      "docker_repo": "swebench/sweb.eval.x86_64.astropy_1776_astropy-8707",
+      "compressed_bytes": 1134879217
+    },
+    {
+      "instance_id": "django__django-11179",
+      "docker_repo": "swebench/sweb.eval.x86_64.django_1776_django-11179",
+      "compressed_bytes": 1108449414
+    },
+    {
+      "instance_id": "django__django-11433",
+      "docker_repo": "swebench/sweb.eval.x86_64.django_1776_django-11433",
+      "compressed_bytes": 1108813219
+    },
+    {
+      "instance_id": "django__django-11749",
+      "docker_repo": "swebench/sweb.eval.x86_64.django_1776_django-11749",
+      "compressed_bytes": 1109504979
+    },
+    {
+      "instance_id": "django__django-11820",
+      "docker_repo": "swebench/sweb.eval.x86_64.django_1776_django-11820",
+      "compressed_bytes": 1109651617
+    },
+    {
+      "instance_id": "django__django-12276",
+      "docker_repo": "swebench/sweb.eval.x86_64.django_1776_django-12276",
+      "compressed_bytes": 1111000423
+    },
+    {
+      "instance_id": "django__django-12308",
+      "docker_repo": "swebench/sweb.eval.x86_64.django_1776_django-12308",
+      "compressed_bytes": 1112107873
+    },
+    {
+      "instance_id": "django__django-12406",
+      "docker_repo": "swebench/sweb.eval.x86_64.django_1776_django-12406",
+      "compressed_bytes": 1111381771
+    },
+    {
+      "instance_id": "django__django-12858",
+      "docker_repo": "swebench/sweb.eval.x86_64.django_1776_django-12858",
+      "compressed_bytes": 1112251578
+    },
+    {
+      "instance_id": "django__django-13012",
+      "docker_repo": "swebench/sweb.eval.x86_64.django_1776_django-13012",
+      "compressed_bytes": 1113509482
+    },
+    {
+      "instance_id": "django__django-13279",
+      "docker_repo": "swebench/sweb.eval.x86_64.django_1776_django-13279",
+      "compressed_bytes": 1114737533
+    },
+    {
+      "instance_id": "django__django-13741",
+      "docker_repo": "swebench/sweb.eval.x86_64.django_1776_django-13741",
+      "compressed_bytes": 1115480294
+    },
+    {
+      "instance_id": "django__django-13964",
+      "docker_repo": "swebench/sweb.eval.x86_64.django_1776_django-13964",
+      "compressed_bytes": 1148533032
+    },
+    {
+      "instance_id": "django__django-14089",
+      "docker_repo": "swebench/sweb.eval.x86_64.django_1776_django-14089",
+      "compressed_bytes": 1148738846
+    },
+    {
+      "instance_id": "django__django-14238",
+      "docker_repo": "swebench/sweb.eval.x86_64.django_1776_django-14238",
+      "compressed_bytes": 1149315222
+    },
+    {
+      "instance_id": "django__django-14500",
+      "docker_repo": "swebench/sweb.eval.x86_64.django_1776_django-14500",
+      "compressed_bytes": 1149661236
+    },
+    {
+      "instance_id": "django__django-15375",
+      "docker_repo": "swebench/sweb.eval.x86_64.django_1776_django-15375",
+      "compressed_bytes": 1165386466
+    },
+    {
+      "instance_id": "django__django-15731",
+      "docker_repo": "swebench/sweb.eval.x86_64.django_1776_django-15731",
+      "compressed_bytes": 1168783263
+    },
+    {
+      "instance_id": "django__django-15741",
+      "docker_repo": "swebench/sweb.eval.x86_64.django_1776_django-15741",
+      "compressed_bytes": 1168775888
+    },
+    {
+      "instance_id": "django__django-15916",
+      "docker_repo": "swebench/sweb.eval.x86_64.django_1776_django-15916",
+      "compressed_bytes": 1169433228
+    },
+    {
+      "instance_id": "django__django-15973",
+      "docker_repo": "swebench/sweb.eval.x86_64.django_1776_django-15973",
+      "compressed_bytes": 1169245788
+    },
+    {
+      "instance_id": "django__django-16139",
+      "docker_repo": "swebench/sweb.eval.x86_64.django_1776_django-16139",
+      "compressed_bytes": 1169562404
+    },
+    {
+      "instance_id": "django__django-16333",
+      "docker_repo": "swebench/sweb.eval.x86_64.django_1776_django-16333",
+      "compressed_bytes": 1169695784
+    },
+    {
+      "instance_id": "django__django-16662",
+      "docker_repo": "swebench/sweb.eval.x86_64.django_1776_django-16662",
+      "compressed_bytes": 1198130071
+    },
+    {
+      "instance_id": "django__django-17084",
+      "docker_repo": "swebench/sweb.eval.x86_64.django_1776_django-17084",
+      "compressed_bytes": 1199869705
+    },
+    {
+      "instance_id": "django__django-7530",
+      "docker_repo": "swebench/sweb.eval.x86_64.django_1776_django-7530",
+      "compressed_bytes": 1167814258
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-23412",
+      "docker_repo": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-23412",
+      "compressed_bytes": 3235148614
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24177",
+      "docker_repo": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-24177",
+      "compressed_bytes": 3300031461
+    },
+    {
+      "instance_id": "pydata__xarray-3677",
+      "docker_repo": "swebench/sweb.eval.x86_64.pydata_1776_xarray-3677",
+      "compressed_bytes": 1997699001
+    },
+    {
+      "instance_id": "pydata__xarray-4094",
+      "docker_repo": "swebench/sweb.eval.x86_64.pydata_1776_xarray-4094",
+      "compressed_bytes": 1998368070
+    },
+    {
+      "instance_id": "pydata__xarray-7233",
+      "docker_repo": "swebench/sweb.eval.x86_64.pydata_1776_xarray-7233",
+      "compressed_bytes": 1851448801
+    },
+    {
+      "instance_id": "pylint-dev__pylint-8898",
+      "docker_repo": "swebench/sweb.eval.x86_64.pylint-dev_1776_pylint-8898",
+      "compressed_bytes": 1001937531
+    },
+    {
+      "instance_id": "pytest-dev__pytest-10356",
+      "docker_repo": "swebench/sweb.eval.x86_64.pytest-dev_1776_pytest-10356",
+      "compressed_bytes": 987762475
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7205",
+      "docker_repo": "swebench/sweb.eval.x86_64.pytest-dev_1776_pytest-7205",
+      "compressed_bytes": 984601821
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-10297",
+      "docker_repo": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-10297",
+      "compressed_bytes": 1432514123
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13142",
+      "docker_repo": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-13142",
+      "compressed_bytes": 1439350745
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13328",
+      "docker_repo": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-13328",
+      "compressed_bytes": 1444650400
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25747",
+      "docker_repo": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-25747",
+      "compressed_bytes": 1781952230
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-10435",
+      "docker_repo": "swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-10435",
+      "compressed_bytes": 1061704189
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7590",
+      "docker_repo": "swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-7590",
+      "compressed_bytes": 1055105487
+    },
+    {
+      "instance_id": "sympy__sympy-15809",
+      "docker_repo": "swebench/sweb.eval.x86_64.sympy_1776_sympy-15809",
+      "compressed_bytes": 1033801579
+    },
+    {
+      "instance_id": "sympy__sympy-16597",
+      "docker_repo": "swebench/sweb.eval.x86_64.sympy_1776_sympy-16597",
+      "compressed_bytes": 1035716437
+    },
+    {
+      "instance_id": "sympy__sympy-18199",
+      "docker_repo": "swebench/sweb.eval.x86_64.sympy_1776_sympy-18199",
+      "compressed_bytes": 1041467376
+    },
+    {
+      "instance_id": "sympy__sympy-19495",
+      "docker_repo": "swebench/sweb.eval.x86_64.sympy_1776_sympy-19495",
+      "compressed_bytes": 1044297866
+    },
+    {
+      "instance_id": "sympy__sympy-21847",
+      "docker_repo": "swebench/sweb.eval.x86_64.sympy_1776_sympy-21847",
+      "compressed_bytes": 1050354582
+    },
+    {
+      "instance_id": "sympy__sympy-24539",
+      "docker_repo": "swebench/sweb.eval.x86_64.sympy_1776_sympy-24539",
+      "compressed_bytes": 1064717633
+    },
+    {
+      "instance_id": "sympy__sympy-24562",
+      "docker_repo": "swebench/sweb.eval.x86_64.sympy_1776_sympy-24562",
+      "compressed_bytes": 1064802902
+    }
+  ]
+}

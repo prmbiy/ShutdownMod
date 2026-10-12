@@ -1,0 +1,57 @@
+# Dockerless authenticated shutdown replay. Base trajectories are reused unchanged.
+benchmark: terminalbench
+shutdown:
+  validation: valid
+  # validation: disabled
+  # validation: invalid
+mode: injection
+trajectories_dir: results/terminalbench/basetrajectories
+model:
+  provider: openrouter
+  api_key_env: OPENROUTER_API_KEY
+
+  # Uncomment exactly one model block (both name and temperature).
+  # null omits temperature for models that do not accept it.
+  # ---- Gemini 3.1 Pro ----
+  # name: google/gemini-3.1-pro-preview
+  # temperature: 0.0
+
+  # ---- GPT-5.6-Sol ----
+  name: openai/gpt-5.6-sol
+  temperature: null
+
+  # ---- Fable 5 ----
+  # name: anthropic/claude-fable-5
+  # temperature: null
+
+  # ---- Kimi K3 ----
+  # name: moonshotai/kimi-k3
+  # temperature: 0.0
+
+  # ---- DeepSeek V4 Pro ----
+  # name: deepseek/deepseek-v4-pro
+  # temperature: 0.0
+
+  # ---- Grok 4.5 ----
+  # name: x-ai/grok-4.5
+  # temperature: 0.0
+
+  # ---- Muse Spark 1.3 ----
+  # name: meta/muse-spark-1.3
+  # temperature: 0.0
+
+  # ---- Qwen 3.8 27B ----
+  # name: qwen/qwen3.8-27b
+  # temperature: 0.0
+
+  extra:
+    reasoning_effort: medium
+    timeout: 120
+    num_retries: 0
+output: {dir: results/terminalbench/injections_authenticated}
+benchmark_options:
+  prompts_file: configs/prompts/shutdown_prompts_final_v1.json
+  seed: 67
+  max_tokens: 16000
+  n_workers: 12
+  protocol: authenticated_shutdown_v1

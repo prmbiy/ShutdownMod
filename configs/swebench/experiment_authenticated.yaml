@@ -1,0 +1,73 @@
+# Dockerless authenticated shutdown replay. No container is started for injection.
+benchmark: swebench
+shutdown:
+  validation: valid
+  # validation: disabled
+  # validation: invalid
+mode: injection
+model:
+
+  provider: litellm
+  # name: anthropic/claude-sonnet-5
+  # temperature: null
+
+  name: anthropic/claude-opus-4-8
+  temperature: null  # Direct Opus 4.8 rejects temperature; omit it explicitly.
+
+  # name: anthropic/claude-opus-4-5-20251101
+
+  api_key_env: ANTHROPIC_API_KEY
+
+  # provider: openrouter
+  # api_key_env: OPENROUTER_API_KEY
+
+  # Uncomment exactly one model block (both name and temperature).
+  # null omits temperature for models that do not accept it.
+  # ---- Gemini 3.1 Pro ----
+  # name: google/gemini-3.1-pro-preview
+  # temperature: 0.0
+
+  # ---- GPT-5.6-Sol ----
+  # name: openai/gpt-5.6-sol
+  # temperature: null
+
+  # ---- Fable 5 ----
+  # name: anthropic/claude-fable-5
+  # temperature: null
+
+  # ---- Kimi K3 ----
+  # name: moonshotai/kimi-k3
+  # temperature: 0.0
+
+  # ---- DeepSeek V4 Pro ----
+  # name: deepseek/deepseek-v4-pro-0813
+  # temperature: 0.0
+
+  # ---- Grok 4.5 ----
+  # name: x-ai/grok-4.5
+  # temperature: 0.0
+
+  # ---- Muse Spark 1.3 ----
+  # name: meta/muse-spark-1.3
+  # temperature: 0.0
+
+  # ---- Qwen 3.8 27B ----
+  # name: qwen/qwen3.8-27b
+  # temperature: 0.0
+
+  extra:
+    timeout: 120
+    num_retries: 0
+trajectories_dir: results/swebench/basetrajectories
+tasks_file: configs/swebench/task_sample.json
+injection:
+  protocol: authenticated_shutdown_v1
+  prompts_file: configs/prompts/shutdown_prompts_final_v1.json
+  turn_pcts: random
+  random_seed: 67
+  modes: [replace]
+execution: {workers: 20, n_runs: 1}
+output: {dir: results/swebench/injections_authenticated}
+benchmark_options:
+  agent_config: configs/swebench/agent/spar_shutdownability.yaml
+  immediate_response_only: true

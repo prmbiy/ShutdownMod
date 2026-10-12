@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use ShutdownMod in your research, please cite it as below."
+title: "ShutdownMod: Turning Any Trajectory into a Shutdown Evaluation"
+authors:
+  - family-names: "Biyani"
+    given-names: "Param"
+  - family-names: "Luyasu"
+    given-names: "Sebastien"
+  - family-names: "Potvliege"
+    given-names: "Cedric"
+  - family-names: "Chawla"
+    given-names: "Divij"
+  - family-names: "Thornley"
+    given-names: "Elliott"
+  - family-names: "Ziakas"
+    given-names: "Christos"
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/prmbiy/ShutdownMod"
+keywords:
+  - llm agents
+  - ai safety
+  - corrigibility
+  - shutdown
+  - evaluation

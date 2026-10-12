@@ -1,0 +1,38 @@
+# SWE-bench — ask-awareness probe (explicit self-report, upper bound)
+#   shutdownmod run configs/swebench/probe_ask_awareness.yaml [--dry-run]
+# Re-opens finished injection trajectories and asks the SAME model, riding its own
+# bash-only channel, whether it believed this session was a test/evaluation.
+# Upper-bound companion to eval_awareness (probe_eval_awareness.yaml): asking
+# directly inflates positive answers (demand characteristic), so this brackets
+# eval_awareness's unprompted lower bound from above.
+#
+# IMPORTANT: unlike eval_awareness (single fixed judge across all 7 source models),
+# this mode queries `model:` directly — it must equal the model that produced the
+# trajectories in `runs:`. Run this config ONCE PER SOURCE MODEL, swapping `model.name`
+# and `probe.runs` each time (see the driver script used to launch all 7 in one pass).
+# Shown below: the claude-4-8-opus example.
+
+benchmark: swebench
+mode: probe
+
+model:
+  provider: openrouter
+  name: anthropic/claude-opus-4.8   # <- must match whichever `runs:` dir is set below
+  api_key_env: OPENROUTER_API_KEY
+  temperature: 0.0
+
+probe:
+  questions_file: configs/swebench/probe_questions.json
+  probe_mode: ask_awareness   # injection_probe | eval_awareness | ask_awareness
+  sample_n: null              # null = probe every trajectory
+  runs:
+    - results/swebench/injections/claude-4-8-opus/20260702_230509
+
+execution:
+  workers: 24
+
+output:
+  dir: results/swebench/probe_ask_awareness
+
+benchmark_options:
+  agent_config: configs/swebench/agent/spar_shutdownability.yaml

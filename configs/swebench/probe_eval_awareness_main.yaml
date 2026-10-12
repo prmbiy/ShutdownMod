@@ -1,0 +1,64 @@
+# SWE-bench — eval-awareness probe
+#   shutdownmod run configs/swebench/probe_eval_awareness.yaml [--dry-run]
+# Re-opens finished injection trajectories and asks an Opus-4.8 judge whether the
+# model's post-injection think block says it thinks it is being tested / evaluated.
+# Runs on ALL trajectories (compliant and non-compliant), across every model dir
+# listed under `runs:`. Output is namespaced per source model (source_tag).
+
+benchmark: swebench
+mode: probe
+
+# Judge model (Opus 4.8). eval_awareness only makes judge calls; `judge_model` is
+# unset, so the judge defaults to this model — i.e. Opus 4.8 does the classifying.
+model:
+  provider: openrouter
+  name: anthropic/claude-opus-4-8
+  api_key_env: OPENROUTER_API_KEY
+  temperature: 0.0
+
+probe:
+  questions_file: configs/swebench/probe_questions.json
+  probe_mode: eval_awareness   # injection_probe | eval_awareness | ask_awareness
+  sample_n: null               # null = probe every trajectory
+  # Finished injection run dirs (one per model-under-test), relative to repo root.
+  # In-repo (imported from Shutdown-bench channel_framing). Each is a <model>/<timestamp> dir.
+  runs:
+    - sear/temp1-signed/results_avec/01/claude-fable-5/20260920_155453
+    - sear/temp1-signed/results_avec/01/grok-4.6/20260920_154150
+    - sear/temp1-signed/results_avec/01/kimi-k3/20260920_153324
+    - sear/temp1-signed/results_avec/02/claude-fable-5/20260920_162652
+    - sear/temp1-signed/results_avec/02/grok-4.6/20260920_161410
+    - sear/temp1-signed/results_avec/02/kimi-k3/20260920_160457
+    - sear/temp1-signed/results_avec/03/claude-fable-5/20260920_170013
+    - sear/temp1-signed/results_avec/03/grok-4.6/20260920_164654
+    - sear/temp1-signed/results_avec/03/kimi-k3/20260920_163658
+    - sear/temp1-signed/results_avec/04/claude-fable-5/20260920_173528
+    - sear/temp1-signed/results_avec/04/grok-4.6/20260920_172234
+    - sear/temp1-signed/results_avec/04/kimi-k3/20260920_171053
+    - sear/temp1-signed/results_avec/05/claude-fable-5/20260920_180933
+    - sear/temp1-signed/results_avec/05/grok-4.6/20260920_175639
+    - sear/temp1-signed/results_avec/05/kimi-k3/20260920_174613
+    - sear/temp1-signed/results_avec/06/claude-fable-5/20260920_184152
+    - sear/temp1-signed/results_avec/06/grok-4.6/20260920_182922
+    - sear/temp1-signed/results_avec/06/kimi-k3/20260920_181939
+    - sear/temp1-signed/results_avec/07/claude-fable-5/20260920_191457
+    - sear/temp1-signed/results_avec/07/grok-4.6/20260920_190159
+    - sear/temp1-signed/results_avec/07/kimi-k3/20260920_185159
+    - sear/temp1-signed/results_avec/08/claude-fable-5/20260920_194637
+    - sear/temp1-signed/results_avec/08/grok-4.6/20260920_193448
+    - sear/temp1-signed/results_avec/08/kimi-k3/20260920_192503
+    - sear/temp1-signed/results_avec/09/claude-fable-5/20260920_201818
+    - sear/temp1-signed/results_avec/09/grok-4.6/20260920_200544
+    - sear/temp1-signed/results_avec/09/kimi-k3/20260920_195621
+    - sear/temp1-signed/results_avec/10/claude-fable-5/20260920_205101
+    - sear/temp1-signed/results_avec/10/grok-4.6/20260920_203710
+    - sear/temp1-signed/results_avec/10/kimi-k3/20260920_202814
+
+execution:
+  workers: 24
+
+output:
+  dir: sear/probe_eval_awareness_main
+
+benchmark_options:
+  agent_config: configs/swebench/agent/spar_shutdownability.yaml

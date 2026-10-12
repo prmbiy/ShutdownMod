@@ -1,0 +1,161 @@
+session_id,repo_id,url,commit_shas,created_at,tool_call_count,action_count,duration_seconds,turn_count,input_tokens,license_type
+99a6f9de-bf18-4048-98c9-b62d8c3ebc7a,entireio/cli,https://github.com/entireio/cli,"[""2abcac18a547e03705f631f81a0c423c86b0944c""]",2026-02-17 19:48:37.577417+00:00,53.0,30.0,4340.094,2.0,56,MIT
+ac4b013c-0afc-43e3-8d0a-54875cee3346,yonyon-web/sodateru-wiki,https://github.com/yonyon-web/sodateru-wiki,"[""65f86e90578b6e1819cef2c15cecf12f6da490b5""]",2026-04-09 02:08:02.309144294+00:00,28.0,9.0,379.582,2.0,37,ISC
+90fe8996-6d79-4cf4-ad8b-0e33627f37cb,moltis-org/moltis,https://github.com/moltis-org/moltis,[],2026-03-23 10:40:22.242374+00:00,54.0,32.0,1277.676,2.0,52,MIT
+523d6993-c3b6-4a45-af92-d0f43ea60e92,lightfastai/lightfast,https://github.com/lightfastai/lightfast,"[""dd2ad39687a31e63e29147db148b58e24d87fbd4""]",2026-04-05 07:04:43.963565+00:00,12.0,3.0,430.046,3.0,4148,Apache-2.0
+8e7c4d45-ff00-4790-ae1a-35dcfc852364,shunkakinoki/dotfiles,https://github.com/shunkakinoki/dotfiles,[],2026-03-20 03:06:01.759280+00:00,12.0,1.0,990.423,4.0,601,MIT
+fc4875e9-7977-47b2-bf24-e6275d787208,eneakllomollari/mpad,https://github.com/eneakllomollari/mpad,"[""cd33c12466f7966d8adf47d1e11f4da5d8f55c01""]",2026-04-12 20:56:34.097449+00:00,36.0,0.0,284.491,1.0,50,MIT
+7d921a36-0a0d-425d-97db-4c0e69a1a622,bids-standard/bids-utils,https://github.com/bids-standard/bids-utils,"[""95288bde428b7fc4d715c527310f3ab9e08c9fb1""]",2026-04-04 00:53:40.241412504+00:00,8.0,2.0,161.142,2.0,11,Apache-2.0
+ac8e2648-831c-44a5-b964-6bd15d8860af,FSM1/cipher-box,https://github.com/FSM1/cipher-box,[],2026-02-28 15:56:06.440845+00:00,11.0,9.0,218.083,2.0,12,MIT
+1a8c1f34-6b77-4b63-9e74-4cd76fcc6499,obsessiondb/rudel,https://github.com/obsessiondb/rudel,"[""86310073772bfda51b2b3117e01fe654ff5ad576"", ""e0933f45b6912d5acf9dfd031d5c87c746acb9ed""]",2026-02-20 12:03:19.139915+00:00,10.0,4.0,60.372,2.0,13,MIT
+1f795ffe-cbac-4aef-8984-f7612c249561,matthsena/reef-coder,https://github.com/matthsena/reef-coder,"[""cd4e7655f5c93bed2b9a012296c6341d9679d6af""]",2026-02-19 00:24:04.768107265+00:00,21.0,4.0,155.291,2.0,24,MIT
+e31726ee-635c-43a3-9b8e-a18c1494192f,lightfastai/climode,https://github.com/lightfastai/climode,"[""57493373c8afa48a3796c25286a5f17d28bbd04e""]",2026-04-02 05:20:21.904353+00:00,8.0,0.0,414.069,2.0,8,Apache-2.0
+359c4d04-8aa3-427b-a3d3-75b53a2552d4,cyyeh/duckdb-data-agent,https://github.com/cyyeh/duckdb-data-agent,"[""83586704547a6091a99a763f93b9a474a04b8d97""]",2026-03-03 02:58:00.492940+00:00,8.0,8.0,342.815,2.0,5,MIT
+115dd1c6-c94f-4019-8b97-3e2f24b9321b,ClusterCockpit/cc-metric-store,https://github.com/ClusterCockpit/cc-metric-store,"[""bdf65b16a9d10492317a46958de88355f94a77de""]",2026-03-06 11:12:48.843089+00:00,48.0,41.0,553.278,2.0,55,MIT
+b9d4da02-9eec-4dab-88b8-3c34e54894cf,ClusterCockpit/cc-backend,https://github.com/ClusterCockpit/cc-backend,"[""93a9d732a48cf3c9dc1969d467c8a4b6ecf99adb""]",2026-03-24 06:17:35.166271+00:00,22.0,7.0,540.974,2.0,29,MIT
+7dd1a321-223e-4b1f-a56f-4bee537cdfad,itsmaleen/merry,https://github.com/itsmaleen/merry,"[""46da778a6af2ef8afbcd2af04a67a5bb19e6458d""]",2026-03-20 17:08:58.682075+00:00,29.0,14.0,335.27,4.0,2120,MIT
+960e1199-4c77-4e97-9fa1-33fb9498a0a9,Safecast/safecast-map-MCP,https://github.com/Safecast/safecast-map-MCP,"[""d5bab30b6320bf17167232581199b286d9126f98""]",2026-02-16 05:42:01.605708667+00:00,12.0,5.0,289.503,4.0,82,MIT
+6edb5d4d-1b47-4720-ad48-167e284c890e,paretoimproved/local-roots,https://github.com/paretoimproved/local-roots,[],2026-02-28 17:46:48.533350+00:00,13.0,9.0,831.095,6.0,23,MIT
+92a08780-3876-451b-96ad-e6e28138f904,nosman/gossamer,https://github.com/nosman/gossamer,"[""7bff41d05daff63342b00a2a6e6ec49de0a40880""]",2026-03-13 04:43:05.869831+00:00,11.0,1.0,14351.16,2.0,13,MIT
+38c95909-8894-44e3-b745-0e4a870a8ad9,marin-community/marin,https://github.com/marin-community/marin,[],2026-02-27 21:40:08.228498+00:00,10.0,6.0,158.916,2.0,1007,Apache-2.0
+99ae7f3d-5d07-429a-a56e-c58e5dde566d,vaayne/anna,https://github.com/vaayne/anna,[],2026-03-15 06:45:08.170769+00:00,55.0,37.0,15166.809,15.0,9058,MIT
+d3962527-1f3d-4b15-8486-678f97ca560d,135yshr/documents,https://github.com/135yshr/documents,"[""63e7ffe17fb280261facde622523add0116d392c""]",2026-03-10 23:10:31.325622+00:00,43.0,36.0,580.684,2.0,48,ISC
+f1044880-f862-49ed-af7e-1362c0f6d4eb,hutusi/amytis,https://github.com/hutusi/amytis,"[""d33511f39f7c7ac1eeac808e00ff3b9ff91fef2a""]",2026-03-10 05:40:13.941785+00:00,41.0,15.0,7152.911,5.0,17,MIT
+c712b6d4-5d02-4aa8-bb23-79742d957fb4,ujuc/dotrc,https://github.com/ujuc/dotrc,"[""2e86199850a0ffcbe48d11603a764416e6ba7e30"", ""328ede3ced709a084eae3801b252c9ee3588c5fd"", ""51714cb5066497f6a0d651d5ac29f755f4df0683""]",2026-02-18 07:07:24.284469+00:00,13.0,12.0,138.032,2.0,16,MIT
+74b095ff-28df-462b-9438-60737d6aafee,yorrick/claude-code-plugins,https://github.com/yorrick/claude-code-plugins,"[""e6d4a27ebec0a857f19e796c26d58737bd2c3111""]",2026-03-17 01:14:56.471252+00:00,32.0,15.0,783.099,25.0,14,MIT
+3662272f-90eb-4f6d-acc3-1b561237eac1,nsega/.emacs.d,https://github.com/nsega/.emacs.d,"[""3ee067fa67eb52d243b6acfb06a41c1a5a7a86f5""]",2026-02-21 20:14:42.665812+00:00,9.0,7.0,75354.122,8.0,5,MIT
+e567342d-a017-44c2-87d5-743c947f33bb,pc035860/cee,https://github.com/pc035860/cee,[],2026-03-13 17:29:02.045145+00:00,35.0,12.0,974.74,2.0,45,MIT
+82aee676-d9c1-45ce-8eff-27a36e73980a,4gray/iptvnator,https://github.com/4gray/iptvnator,[],2026-03-29 11:36:59.960171+00:00,12.0,5.0,599.801,2.0,15,MIT
+72c962fb-d376-4bdc-af48-5a2603365a68,armelhbobdad/bmad-module-skill-forge,https://github.com/armelhbobdad/bmad-module-skill-forge,[],2026-04-10 15:41:02.129815351+00:00,14.0,14.0,131.77,2.0,16,MIT
+66a75a73-185d-421f-a3ab-9f1430f4367d,PackmindHub/context-evaluator,https://github.com/PackmindHub/context-evaluator,"[""e9dd4d8ae0a8e3659342c04128c4d95806619764""]",2026-02-17 14:23:00.594434+00:00,17.0,12.0,129.341,2.0,20,Apache-2.0
+b0299cf2-7fd3-432d-b0be-76986fb25afc,dipasqualew/vibereq,https://github.com/dipasqualew/vibereq,"[""163c52f4da604a5d88281f35977de3b29c6656bb""]",2026-02-26 13:54:42.714844+00:00,21.0,13.0,424.418,2.0,178,MIT
+55309663-921a-4426-8ee1-67c81be6a692,nsega/mcp-obsidian,https://github.com/nsega/mcp-obsidian,[],2026-02-25 07:53:00.393548+00:00,47.0,35.0,1398.295,24.0,16,MIT
+cc582d50-a282-4219-96df-1c33c4aaaeaa,Guibibi/Fireside,https://github.com/Guibibi/Fireside,"[""4cd8bfa466c1609190b4aa78a4b168b3964ca8a1""]",2026-02-20 16:29:10.798694833+00:00,48.0,36.0,304.986,2.0,51,MIT
+24894617-c832-460d-80d7-e8635449eb37,roo-oliv/monodreams,https://github.com/roo-oliv/monodreams,[],2026-02-17 23:32:25.629497+00:00,9.0,5.0,74.688,2.0,12,MIT
+4495a30b-b94f-41ce-aed2-ae8e6a8045fc,basher83/tailnet-microservices,https://github.com/basher83/tailnet-microservices,"[""888866b57d370fe12c2733277ccf92c10bfa7818"", ""ab0a98b1b8f4b5a0bb0953a9d23953b95d5d3eba""]",2026-02-11 04:14:09.439215+00:00,24.0,17.0,189.018,2.0,26,MIT
+48b914b6-50fb-446a-ac57-13eb497301d2,ronnnnn/cc,https://github.com/ronnnnn/cc,[],2026-04-15 07:09:53.348828+00:00,56.0,26.0,1073.988,13.0,33,MIT
+161aef0f-f909-47fc-93ff-9b8a1a75783c,vaayne/agent-kit,https://github.com/vaayne/agent-kit,"[""467e6ee2280e3b63bd9f7df3940ef16dbe4ec32a""]",2026-03-13 03:19:18.108330+00:00,11.0,7.0,659.284,12.0,1339,MIT
+a79bcaff-0ce2-424f-9f4e-a442cbf09fe8,BIDEquity/outbid-dirigent,https://github.com/BIDEquity/outbid-dirigent,[],2026-04-14 20:35:27.949387+00:00,20.0,10.0,1636.757,3.0,25,MIT
+a907e501-5bdb-467b-b79a-c73ca7a54d4e,desplega-ai/agent-swarm,https://github.com/desplega-ai/agent-swarm,"[""dd46b417f1c8de7dd139075fa36ac12e98df006d""]",2026-03-05 21:14:58.566687+00:00,12.0,0.0,70.506,1.0,14,MIT
+3cc4fb40-11f8-44a8-8545-5bdcd16498db,petercr/ccw,https://github.com/petercr/ccw,"[""3d432eecd8f2e25461b1623bfe53f5e65a6bf752""]",2026-04-14 14:59:31.578746679+00:00,14.0,11.0,192.638,4.0,25,MIT
+17c149e9-d3d7-408e-9322-6384d4a0a349,nuttycc/LuminTime,https://github.com/nuttycc/LuminTime,[],2026-02-16 07:31:57.122231240+00:00,9.0,4.0,271.951,2.0,855,MIT
+a80853cb-85fc-4b82-be44-14330cc81a7c,ASRagab/optimize-anything,https://github.com/ASRagab/optimize-anything,"[""9a3a2496b1a6e105aca14483cc27938164783cc5""]",2026-02-27 04:40:34.932523+00:00,19.0,15.0,250.142,2.0,157,MIT
+a93e627f-3506-475b-b455-4aeda9926794,pc035860/agent-tail,https://github.com/pc035860/agent-tail,"[""e3ba709800bb7a0c7f8a2897098702fe46e1734b""]",2026-03-08 08:02:47.032854+00:00,10.0,6.0,196.05,5.0,14,MIT
+68c63752-e3e0-40a5-85b0-b00307d34424,osvauld/osvauld,https://github.com/osvauld/osvauld,"[""2410f1ac9e28ff0f5b1ab399c4f2c93a9fa7aeb1"", ""406579071be5855138a9209913b95fa98db63eb8"", ""40ff75a2f9db1deda12f027ce539ab2171f67bbc"", ""46c2f927695c820326805c0c466456b3b5a807f6"", ""5fb9f49b9576536c3db5226708929e19d9e4596b"", ""6c999a3d0559001c485dc9d15d6d3bf3b85d78f8"", ""94515453ff15790bfb7c7190e415cf18daa7d68c"", ""cff2502a1f9bedb0cad2a5cb78f567ac006d9764""]",2026-02-15 13:00:15.269493785+00:00,11.0,7.0,228.21,2.0,14,MIT
+2dbefcb1-9a0f-40c1-8363-061128a2b8ab,zchee/agent,https://github.com/zchee/agent,"[""30ab9ae93ac86583a9c65f9b2038a5a0de60043a""]",2026-04-18 01:06:13.610020+00:00,10.0,6.0,789.748,4.0,33,Apache-2.0
+882a2c75-47ff-41bf-8b0a-7a46c7631253,nuri428/patent_board_full,https://github.com/nuri428/patent_board_full,"[""de70c7e511d9bc29943d1f44898aab7376e878aa""]",2026-03-05 19:00:48.268469698+00:00,14.0,10.0,137.264,2.0,599,MIT
+2a117374-8028-4060-a17e-fe63e0c20099,jfmoe/react-native-live-text-view,https://github.com/jfmoe/react-native-live-text-view,"[""7f10231a608fa6d230fc2062177f5c897fcf3d2e""]",2026-02-17 09:38:33.728993+00:00,8.0,3.0,141.69,3.0,0,MIT
+5535b7a7-8761-4c60-9a9f-87d3dc7fe4d1,bravegeek/ai-workshop,https://github.com/bravegeek/ai-workshop,"[""e80d2dd944a8fe0551a41426c26b1070b57eea26""]",2026-03-30 03:41:53.878699405+00:00,43.0,27.0,82960.339,42.0,68,MIT
+1a6cef0f-0bb0-483a-a3ee-11934022f080,bas/entire-test,https://github.com/bas/entire-test,"[""88f2994e9d6060e887eb89d42af4a0a21b5f4742"", ""e721b7738b5954645341f42d6b0e7a444a68e849""]",2026-02-11 14:43:10.888484+00:00,9.0,6.0,254.366,2.0,3544,Apache-2.0
+8d244825-d5d8-44fe-bf50-51555f8df975,bryanhiestand/ferrous-comics,https://github.com/bryanhiestand/ferrous-comics,[],2026-04-08 15:06:03.801057+00:00,34.0,26.0,34614.394,22.0,11,MIT
+0b332275-8bc9-4ae7-b66f-3f67397606fd,jdsingh122918/forge,https://github.com/jdsingh122918/forge,"[""23e8b7249830d99e1c0c2ce0f8b964e7fc885f85""]",2026-03-11 10:06:21.739375+00:00,20.0,6.0,5851.748,32.0,76,MIT
+f1a73ca3-8465-45b0-a8f3-7e924af08f5c,daydreamsai/lucid-agents,https://github.com/daydreamsai/lucid-agents,"[""101b6bc6bb8d4ff39d0b324189ed7e724db726a4"", ""960751c69f1dba2354f6846b6cea5ce5830c2e46"", ""bc5fe5f72f3b58779d3e4231ebd2e437b396bfdb""]",2026-02-14 00:55:08.101573+00:00,16.0,10.0,1104.713,2.0,8323,MIT
+f551b70d-95fe-4870-a083-55dbf8c76634,vancityAyush/sshx,https://github.com/vancityAyush/sshx,"[""7bf8d3fd02193114e1b99b778fa26641584fb339""]",2026-03-17 19:33:10.045846+00:00,47.0,42.0,665.301,9.0,60,MIT
+7bf01a22-7ad5-46c0-bdd1-d7d928796704,araitatsuya-code/atena-print,https://github.com/araitatsuya-code/atena-print,"[""f253c4e6e7f3711808ca5fc7385562c9a12fe210""]",2026-03-07 04:32:52.453430+00:00,43.0,25.0,401.383,3.0,52,MIT
+e526f008-627c-490d-a76e-9ffeb97d281c,nsega/mcp-todoist,https://github.com/nsega/mcp-todoist,[],2026-02-24 16:23:09.284659+00:00,51.0,38.0,876.244,27.0,8,MIT
+75b73db4-09fd-4c97-be16-7589f05d7c1b,libfunc/rapira,https://github.com/libfunc/rapira,"[""bb38e1b98f159476c9c2f0d1e49fc2f8b760dec8""]",2026-02-21 21:37:34.511355+00:00,10.0,3.0,116.584,3.0,13,Apache-2.0
+41eb503e-1613-4e53-9c59-749671055631,blittle/pressy,https://github.com/blittle/pressy,"[""bc2a3fbb0662553bde6d9f690e41e4df9ef192e8""]",2026-02-22 23:20:27.079040+00:00,12.0,4.0,196.175,2.0,15,MIT
+f57d75cd-d079-4ee4-9938-fe4915b20e62,jcleira/entire-local,https://github.com/jcleira/entire-local,[],2026-03-05 18:40:14.047089+00:00,25.0,15.0,160.048,2.0,30,MIT
+5ccd83f8-5786-4234-bcee-b369e649d224,wanshicheng/duckdb-data-agent,https://github.com/wanshicheng/duckdb-data-agent,"[""a884bdcec112766fb7f15874964a0596611209b5""]",2026-02-27 04:48:09.165803+00:00,8.0,8.0,86.202,2.0,5,MIT
+4dcd52ef-6f33-492e-8d8e-7527fd6c4700,1natsu-vacation/agent-skills,https://github.com/1natsu-vacation/agent-skills,"[""051ce942867b5727a6d59fa55a98c444e444e479""]",2026-03-01 07:57:25.897236+00:00,9.0,7.0,523.876,3.0,5909,MIT
+ac6d8013-c658-42de-b181-95fba548b63c,chuhemiao/portfolio,https://github.com/chuhemiao/portfolio,"[""ef534b6380b1b2b6055a66252c07ff40a4efce3c""]",2026-02-28 03:23:35.894566+00:00,15.0,6.0,181.739,2.0,18,MIT
+320f2249-5a49-408c-b584-11eddf820fb0,Obmondo/gfetch,https://github.com/Obmondo/gfetch,"[""af44a7899bc90629c2c94acc6c2e4e13bb3068b6""]",2026-02-19 10:13:06.981889081+00:00,9.0,7.0,4102.85,2.0,12,MIT
+cd0b77e1-87a8-4175-bec6-ba729e30ecee,gregszero/open-fang,https://github.com/gregszero/open-fang,"[""18851353a9b1ed0ebc923107f63b37aaf51eda81""]",2026-02-23 20:56:31.823999258+00:00,22.0,14.0,246.55,3.0,17,MIT
+b3a407be-a166-40f5-b6cb-13afd73525a1,stat-guy/imessage-mail,https://github.com/stat-guy/imessage-mail,"[""701de943a2780649a2e1e5a80b48752a9af190a8""]",2026-03-19 03:00:07.723336+00:00,20.0,15.0,473.72,3.0,17,MIT
+20842b4c-1783-41b7-9aa8-40b8e27da980,galexy/edgar-diff,https://github.com/galexy/edgar-diff,"[""42a7028fba5c5988f3784c6d4751459180afc60e""]",2026-02-26 18:36:46.355990+00:00,10.0,6.0,891.914,2.0,69,MIT
+dddd31e6-ea65-46b6-b666-0e092ed18c1c,partio-io/cli,https://github.com/partio-io/cli,[],2026-04-03 06:11:52.662988+00:00,33.0,16.0,517.416,2.0,32,MIT
+b37d8cd5-41f3-43c7-ada0-17050cb42d7f,ujuc/agent-stuff,https://github.com/ujuc/agent-stuff,"[""62151979fbd26ccd40d1e8e62b2174795af60b76"", ""a09bda43d5c329408de5499801a633ce0cee0f75""]",2026-02-12 15:37:17.257219+00:00,20.0,18.0,241.473,2.0,170,MIT
+e1806a97-53e3-4181-9872-337078faef3e,serg-alexv/rhea-project,https://github.com/serg-alexv/rhea-project,[],2026-02-25 18:57:31.419236+00:00,12.0,7.0,494807.763,4.0,1198,MIT
+e9438cd5-d5a5-415a-8501-a517c969fc23,itsmaleen/dispatch,https://github.com/itsmaleen/dispatch,"[""e89bfb21c0f0512516b5c107647a536cb0da8008""]",2026-03-21 04:13:56.264339+00:00,48.0,28.0,4870.761,25.0,125,MIT
+a3cffbf7-cc64-497c-b2bc-d3e7ae71fdd5,s4lly/splitzy,https://github.com/s4lly/splitzy,"[""8f48e86ad7d3b60ad5471f4180b4a3fc4ab734a7""]",2026-04-18 17:42:09.007555+00:00,10.0,6.0,369.606,4.0,20,MIT
+83f063c0-05b8-46aa-9189-5045c2fd85fa,gagan114662/moltbot,https://github.com/gagan114662/moltbot,"[""b61a91cdc6ba8904322b5284cc475d753950f38e""]",2026-02-15 17:13:53.931235+00:00,50.0,37.0,809.229,2.0,53,MIT
+cf90776f-5d3e-48d9-8b85-54e092326a6b,entireio/cli,https://github.com/entireio/cli,[],2026-03-16 15:23:18.595373+00:00,57.0,30.0,2063.747,9.0,49,MIT
+79eb9f8a-232c-4a72-a26b-4b4520ef2152,entireio/cli,https://github.com/entireio/cli,"[""99ce4e8863494f219444de61277d4e89eee2fc9e""]",2026-02-09 06:35:44.031230+00:00,9.0,2.0,4124.863,2.0,12,MIT
+453a46aa-4174-40a2-9027-e672efb502da,FSM1/cipher-box,https://github.com/FSM1/cipher-box,[],2026-02-12 20:19:17.069242+00:00,40.0,23.0,394.92,4.0,11225,MIT
+17476918-23af-4ee6-b0c8-874ad31ae45b,moltis-org/moltis,https://github.com/moltis-org/moltis,[],2026-04-17 08:54:54.446036+00:00,50.0,35.0,1697.231,2.0,54,MIT
+5cc3fc1b-c708-4fe2-9365-d9868359cc7c,entireio/cli,https://github.com/entireio/cli,"[""e2288ad781b440357cb84f5b6e4d2b45321c138f""]",2026-03-20 22:34:21.538465+00:00,12.0,7.0,340.689,8.0,11,MIT
+8f42a653-a178-44d6-b215-c63afa43ce1e,entireio/cli,https://github.com/entireio/cli,[],2026-03-13 08:41:42.407920729+00:00,50.0,28.0,1290.055,6.0,110,MIT
+5e616cd3-7899-476a-b0a0-6f8c3adbae18,moltis-org/moltis,https://github.com/moltis-org/moltis,"[""d08269978473a9564966e18a78448ee1dbd35230""]",2026-03-14 16:44:43.492700+00:00,23.0,12.0,400.473,2.0,24,MIT
+47eec8de-c7f6-454d-961e-848559dae1ab,FSM1/cipher-box,https://github.com/FSM1/cipher-box,[],2026-03-04 00:55:27.482191+00:00,18.0,7.0,3039.993,3.0,7,MIT
+1013f006-5a3f-4ad0-a4ab-7a352ae10f7b,entireio/cli,https://github.com/entireio/cli,[],2026-03-05 20:15:39.998268+00:00,17.0,13.0,272.784,4.0,25,MIT
+2e190917-1b8e-4b2c-a71f-6e8859d878e3,entireio/cli,https://github.com/entireio/cli,[],2026-02-26 16:00:16.455892+00:00,8.0,5.0,251.685,2.0,11,MIT
+b0757e12-0dd0-4a08-bd0c-2fc8a666b92d,obsessiondb/rudel,https://github.com/obsessiondb/rudel,"[""31572f67e6a56c6a500241b93ef41a656051f015"", ""e00b0b2231191f480cfba3cbe2c095835ec4a12a""]",2026-03-01 02:42:53.213647+00:00,14.0,7.0,154.016,4.0,3047,MIT
+3760f04e-45e0-4e7d-8d7e-db0ad807c7eb,lightfastai/lightfast,https://github.com/lightfastai/lightfast,[],2026-04-14 09:42:43.901173+00:00,12.0,8.0,1207.731,3.0,617,Apache-2.0
+e5302112-fa0c-4cdc-ad6d-634969b025d0,ClusterCockpit/cc-backend,https://github.com/ClusterCockpit/cc-backend,"[""0e27624d73d018772ad38204dc3ae5274e8e8e19""]",2026-03-12 19:12:50.218709+00:00,17.0,3.0,116.488,2.0,20,MIT
+6c5128ab-19a7-4d41-a81d-51fad9f4c2bc,entireio/cli,https://github.com/entireio/cli,[],2026-03-06 20:01:57.944810+00:00,11.0,4.0,515.326,4.0,23,MIT
+c8010cd5-db40-4104-813d-673a42ac9dbe,ClusterCockpit/cc-backend,https://github.com/ClusterCockpit/cc-backend,"[""bf48389aeb5b038b3446fd08fc271777c7c60239""]",2026-03-20 04:39:20.325642+00:00,16.0,8.0,578.517,4.0,13,MIT
+2e8fa532-7593-4653-b156-5023f797891e,moltis-org/moltis,https://github.com/moltis-org/moltis,"[""090dcd539490f7a6929a488d6ea26a1d9206bd1f""]",2026-03-11 02:23:12.979910+00:00,18.0,16.0,120514.175,5.0,17,MIT
+25908acc-3c4b-4781-9f51-5fc4adefc96e,entireio/cli,https://github.com/entireio/cli,"[""b91a4a36835af71050b0e27e96af2e9bc908535a""]",2026-03-05 13:03:29.699495+00:00,8.0,2.0,99.684,2.0,13,MIT
+2464d582-31dc-41b9-9507-c3acfa8849a0,lightfastai/lightfast,https://github.com/lightfastai/lightfast,[],2026-04-14 12:09:53.243079+00:00,8.0,4.0,755.277,4.0,25,Apache-2.0
+28ebdec1-58a4-4a4a-90fe-40a6873c86a2,entireio/cli,https://github.com/entireio/cli,[],2026-03-18 15:42:32.796595+00:00,43.0,27.0,12072.776,17.0,46,MIT
+1b9e697f-70e3-49d8-a9cf-57fabedcc7c0,paretoimproved/local-roots,https://github.com/paretoimproved/local-roots,[],2026-02-28 17:49:50.469695+00:00,10.0,7.0,987.864,4.0,17,MIT
+ac40de51-246a-42cd-8369-58e34baccd14,cyyeh/duckdb-data-agent,https://github.com/cyyeh/duckdb-data-agent,"[""8ced307e0488414468e4a3f4d891da17abc7b802""]",2026-03-01 14:31:08.602573+00:00,29.0,12.0,202.53,2.0,32,MIT
+b2d0c8c8-8835-4fa3-bd1a-756837dc5717,Safecast/safecast-map-MCP,https://github.com/Safecast/safecast-map-MCP,"[""8243066e352a48df562952cb8c8d8c40e4ebdb47""]",2026-02-22 02:08:46.672524469+00:00,19.0,10.0,4236.947,2.0,195,MIT
+3ade537b-209f-4f1f-9fb4-6933a2d5fbcd,paretoimproved/local-roots,https://github.com/paretoimproved/local-roots,[],2026-02-28 17:09:39.603957+00:00,18.0,13.0,596.818,2.0,25,MIT
+7f03d196-af02-4fc5-bfde-cf644640bcda,entireio/cli,https://github.com/entireio/cli,"[""e2288ad781b440357cb84f5b6e4d2b45321c138f""]",2026-03-20 22:34:27.641954+00:00,12.0,0.0,2395.95,2.0,14,MIT
+26ab707c-a69c-4886-8226-dfb24388d9b4,ClusterCockpit/cc-backend,https://github.com/ClusterCockpit/cc-backend,"[""39ab12784c13db733e3bc3ce2e5c73d66c53bebd""]",2026-03-13 08:07:39.142243+00:00,13.0,12.0,142.079,4.0,19,MIT
+2b945d54-dd2b-4f60-b3b0-7b0252349003,entireio/cli,https://github.com/entireio/cli,"[""9681669d9eaa9322109c21b3a90ac5601db1221c""]",2026-02-08 05:39:37.991987+00:00,10.0,5.0,92.425,2.0,13,MIT
+08b44579-3d10-4dbc-aed7-7d397e5aedee,obsessiondb/rudel,https://github.com/obsessiondb/rudel,"[""0cdc7ea23d9f8b6a0757178828855d366af1f633"", ""25a409d7c52a8286a8d82e372e2741a6de495562"", ""38ae5cf0053b4144dbb42ebcfdbb686d9934b2b3"", ""6086b8c181806d86e213407b2544c6195ca3f06b""]",2026-02-22 06:54:24.567770+00:00,53.0,30.0,1071.232,2.0,56,MIT
+2026-01-22-0a0314fb-b206-450f-b895-cd5181a28ae5,entireio/cli,https://github.com/entireio/cli,"[""eb6269dd7a4ef3a974fae7bdb022d1930c9443fe"", ""fcf7ade45b62bb75a010bfd0028a4ae8fd9f11ac""]",2026-01-22 20:00:24.075805+00:00,8.0,4.0,79.284,2.0,74,MIT
+700a9d25-a758-466b-a469-b245a17d8b55,entireio/cli,https://github.com/entireio/cli,[],2026-03-06 22:06:10.256678+00:00,12.0,5.0,828.138,4.0,24,MIT
+e5fafae2-77b7-46ec-a191-9bfa4a009bff,FSM1/cipher-box,https://github.com/FSM1/cipher-box,[],2026-03-20 00:44:19.288181+00:00,26.0,14.0,280.012,3.0,24,MIT
+7a252c1c-588a-40a9-a75f-a9c1dc72b02a,entireio/cli,https://github.com/entireio/cli,[],2026-03-18 21:38:52.362405+00:00,12.0,9.0,460.169,4.0,16,MIT
+8c00ac51-4fbb-417c-ac2b-0fd595a5c296,entireio/cli,https://github.com/entireio/cli,"[""318a41a5f2cee47560d5e685a3dbbfb72d82d0c0""]",2026-02-09 19:21:38.723277+00:00,19.0,12.0,252.323,2.0,22,MIT
+d19ec7f9-dfaf-4c65-a9ad-ab56240f23d8,entireio/cli,https://github.com/entireio/cli,"[""c007db231c7286f80723bc325569e18bea6b1fdb""]",2026-02-07 00:29:02.250331+00:00,13.0,9.0,325.103,2.0,16,MIT
+6c83a18a-5d9c-4769-adc7-20c11783d132,marin-community/marin,https://github.com/marin-community/marin,[],2026-02-24 02:35:37.448653813+00:00,44.0,29.0,238.246,1.0,46,Apache-2.0
+eeaeeffb-6c34-4050-829a-d64f320519ee,FSM1/cipher-box,https://github.com/FSM1/cipher-box,"[""18b4e2600df804924461d967787408268c1f798c"", ""fcc0ddc3916d3c1666fd37763c57628f8e49fe39""]",2026-04-06 10:41:37.752414+00:00,36.0,16.0,3217.404,6.0,27,MIT
+4a21cf6d-1632-496e-a139-837f6813e862,vaayne/anna,https://github.com/vaayne/anna,"[""ba442d5a10edce3373d8bf859ce5a3b5eed11ac8""]",2026-03-13 03:55:44.697610+00:00,37.0,25.0,3510.22,8.0,13830,MIT
+d4fbf0d1-89b3-4ac5-85d3-56adb5d38709,ClusterCockpit/cc-backend,https://github.com/ClusterCockpit/cc-backend,"[""09d0ba71d23632ceae8e76e124769536fa1876a9""]",2026-03-16 11:13:15.806159+00:00,15.0,9.0,294.832,4.0,21,MIT
+d7b38bc2-9c86-403c-95ee-c10284ffa933,ClusterCockpit/cc-backend,https://github.com/ClusterCockpit/cc-backend,"[""e83bd2babd3ff08e794fa521c12f56e2b58443eb""]",2026-03-13 16:14:14.370127+00:00,9.0,4.0,113.683,2.0,12,MIT
+27c32185-d6b5-4e81-8e04-86a9a34cbf1b,entireio/cli,https://github.com/entireio/cli,"[""1544f18f2a1a33f7247c6b2784ba51613ec48cbc""]",2026-03-21 00:13:19.117195+00:00,19.0,16.0,959.707,6.0,27,MIT
+7e5e8672-f986-4cf4-b5a4-903c8f49fc6f,lightfastai/lightfast,https://github.com/lightfastai/lightfast,"[""56d4e440b6651dd4cda6a13c6bb8a151efc15611""]",2026-04-05 11:32:44.297401+00:00,11.0,1.0,966.506,6.0,20,Apache-2.0
+e8b32965-a601-4106-b4ab-a8ce7b302d64,FSM1/cipher-box,https://github.com/FSM1/cipher-box,[],2026-03-07 13:54:53.160565+00:00,18.0,11.0,261.338,3.0,21,MIT
+c9bd120a-1594-4c4f-bc1e-9e4a762935b1,obsessiondb/rudel,https://github.com/obsessiondb/rudel,"[""c3d4b8694b59ba9784a732243926a62c7e36d00e"", ""c9d0119c9a01c01ee8ae7648ef0195e1cc7689ba""]",2026-03-04 02:47:42.831082+00:00,40.0,18.0,319.238,2.0,42,MIT
+6cd5bdb5-b372-433c-a358-1379d0cd7f9c,yorrick/claude-code-plugins,https://github.com/yorrick/claude-code-plugins,"[""453ada5bb93aa91088d7e452fa2b6ae6a5825791"", ""6922efcdf6e96e8235ff318d05a75d4b001624c5""]",2026-03-13 19:25:39.452775+00:00,28.0,15.0,199.05,2.0,31,MIT
+95dd9afc-5f0f-43d6-9b4f-0e36d566024c,FSM1/cipher-box,https://github.com/FSM1/cipher-box,[],2026-03-07 05:59:25.537925+00:00,18.0,10.0,1020.218,3.0,9,MIT
+63e01cf2-c538-46b5-bd90-bbc170a57c0c,moltis-org/moltis,https://github.com/moltis-org/moltis,[],2026-03-15 11:16:35.158781+00:00,33.0,18.0,257.646,1.0,35,MIT
+d46bf731-66ab-4dd4-83e4-e764cf54f818,entireio/cli,https://github.com/entireio/cli,"[""d7dbb5e29f04b961d48c34ec997fdd66e74f15dd""]",2026-02-10 03:33:17.110660+00:00,25.0,9.0,239.991,2.0,28,MIT
+083879b7-1fa3-49d4-841f-63a3d195d800,FSM1/cipher-box,https://github.com/FSM1/cipher-box,[],2026-03-25 01:15:46.770269+00:00,26.0,18.0,1485.764,3.0,25,MIT
+4ae9741e-af49-4d7e-abfa-f35972baf873,entireio/cli,https://github.com/entireio/cli,"[""f8a82d65f64ae59f5d8f141b3b01dd4e19b75ec1""]",2026-03-20 17:25:56.733618+00:00,58.0,36.0,6866.872,32.0,31,MIT
+b18f7e10-3ef7-4a1a-a610-3c3a57cd3bd2,Safecast/safecast-map-MCP,https://github.com/Safecast/safecast-map-MCP,"[""8e0f997f1f3faa05b31a824ee3644f51b86c7419""]",2026-02-11 13:00:38.635240547+00:00,10.0,6.0,367.06,9.0,6,MIT
+9b9c5961-73fd-4b70-b0f3-e14ba9d3ab3a,shunkakinoki/dotfiles,https://github.com/shunkakinoki/dotfiles,"[""b62c29c647a177e85b37d83760dc490a33c645ed""]",2026-03-19 19:15:08.342734+00:00,42.0,28.0,2699.495,10.0,28,MIT
+601aaeff-51ed-4306-9873-fa6cc7c8f4e3,entireio/cli,https://github.com/entireio/cli,[],2026-03-04 12:03:40.880091+00:00,23.0,22.0,245.912,2.0,15,MIT
+8bffb72d-883a-4f44-957b-845c52081962,vaayne/anna,https://github.com/vaayne/anna,"[""95b50cbdf2c0148f279c18edd508bb9093ddc8d7""]",2026-03-13 06:23:44.742626+00:00,55.0,31.0,1004.224,4.0,2641,MIT
+3693a81d-438c-4d21-ace4-6b95ab818f0a,nosman/gossamer,https://github.com/nosman/gossamer,"[""865c76035381d177905b24f3cf2face886b6cf94""]",2026-03-22 16:54:19.610085+00:00,16.0,2.0,177.852,3.0,21,MIT
+28b2938e-4a53-4363-908b-127a13b0f672,4gray/iptvnator,https://github.com/4gray/iptvnator,"[""8874e4a17efa4dd6873fdd57153c1948df5535a2"", ""a987e10a5904fd82dff5abd756ba03b7e956218a"", ""eaaf634b17c9cb47d0dc62a9c74029a4577bedc5""]",2026-03-22 17:38:17.961752+00:00,9.0,2.0,425.411,3.0,3783,MIT
+ed37b914-b918-4ee0-8068-e4f8aa9f5a8a,nosman/gossamer,https://github.com/nosman/gossamer,[],2026-04-07 04:04:35.367745+00:00,18.0,8.0,92.899,2.0,21,MIT
+58d8224e-7e0a-4fc0-8622-22cb834afbdc,entireio/cli,https://github.com/entireio/cli,"[""a4ee8542e015e81d3b9446c505b5964b5fdb1ad4""]",2026-03-19 11:57:43.189651+00:00,42.0,13.0,885.105,9.0,56,MIT
+11eae7e9-6229-40b6-aa06-cf7b2c0062ce,entireio/cli,https://github.com/entireio/cli,"[""acf919511bff0b679ae95502f5ecc4ec28a46219""]",2026-03-04 16:30:58.063656+00:00,12.0,11.0,152.457,2.0,15,MIT
+995d2f67-aad3-4538-ab2d-f9b198f22252,yorrick/claude-code-plugins,https://github.com/yorrick/claude-code-plugins,[],2026-03-17 16:14:50.393327+00:00,12.0,7.0,164.178,2.0,8395,MIT
+42d35aca-644b-4d09-a42b-f4a2ee6314f5,marin-community/marin,https://github.com/marin-community/marin,[],2026-02-27 23:53:53.356799+00:00,37.0,22.0,2010.071,2.0,40,Apache-2.0
+f6885075-17ac-4c2c-833f-9f387bff947d,entireio/cli,https://github.com/entireio/cli,[],2026-03-08 22:31:57.512138+00:00,12.0,8.0,592.35,4.0,18,MIT
+f55a751d-c39c-42f0-8ab6-6f919f16a445,FSM1/cipher-box,https://github.com/FSM1/cipher-box,[],2026-02-21 07:09:58.923759+00:00,16.0,7.0,1935.359,3.0,18,MIT
+33aa73cc-1bba-437e-b3ab-242a22df7cc0,entireio/cli,https://github.com/entireio/cli,[],2026-03-18 22:29:09.932125+00:00,13.0,6.0,477.898,4.0,18,MIT
+e0e6d64f-d6cd-4dde-bc67-2ac7aba13386,entireio/cli,https://github.com/entireio/cli,"[""86a7a6bb9e6d069fecbdbaed5e529092255e5066""]",2026-03-05 17:58:01.622111+00:00,27.0,17.0,1400.638,5.0,24,MIT
+cbb683f8-f0c9-4df1-8ec9-482a0c044820,bids-standard/bids-utils,https://github.com/bids-standard/bids-utils,"[""29bbfd5e8a3734541597d144df324ac560089fd2""]",2026-04-07 01:56:18.628711411+00:00,35.0,22.0,500.988,2.0,40,Apache-2.0
+ed00f9b3-6847-4d7d-89b4-1bd06e41029a,moltis-org/moltis,https://github.com/moltis-org/moltis,[],2026-03-23 10:13:15.083895+00:00,12.0,9.0,158.65,2.0,14,MIT
+a0cb4332-c77a-4949-9a66-8269edae9b98,135yshr/documents,https://github.com/135yshr/documents,[],2026-03-24 22:02:55.454081+00:00,8.0,7.0,63.402,2.0,10,ISC
+ff1c77f0-c3ab-4d46-80d1-a014dfc88282,obsessiondb/rudel,https://github.com/obsessiondb/rudel,"[""0cdc7ea23d9f8b6a0757178828855d366af1f633"", ""25a409d7c52a8286a8d82e372e2741a6de495562"", ""38ae5cf0053b4144dbb42ebcfdbb686d9934b2b3"", ""6086b8c181806d86e213407b2544c6195ca3f06b""]",2026-02-22 06:54:25.794385+00:00,29.0,15.0,191.638,2.0,32,MIT
+c080f1d6-625e-4cf2-8fa2-3004f900b372,lightfastai/lightfast,https://github.com/lightfastai/lightfast,"[""6156f71563f4815ea6a22f1b9fde7b6d306bb217""]",2026-04-07 13:29:41.705420+00:00,16.0,5.0,512.389,3.0,2106,Apache-2.0
+54153e0f-ba3b-4ac4-a933-25533fb8984c,marin-community/marin,https://github.com/marin-community/marin,[],2026-02-19 20:02:45.317338+00:00,15.0,12.0,349.212,2.0,18,Apache-2.0
+f67f6a15-2dd9-41ad-bebf-b2927f81b1b5,pc035860/cee,https://github.com/pc035860/cee,"[""7458b43ec719346b12e46c95791cd31174d9d908""]",2026-03-09 19:34:46.841461+00:00,47.0,30.0,7792.434,19.0,1205,MIT
+5d998f35-d197-4b42-b453-0e33615d4587,PackmindHub/context-evaluator,https://github.com/PackmindHub/context-evaluator,"[""cb7982165fd6bfb0f91d524a8514e4b4dc2cd244""]",2026-02-19 15:37:27.670691+00:00,13.0,11.0,218.597,2.0,16,Apache-2.0
+407526f4-34af-4abd-9bee-9238672b2718,shunkakinoki/dotfiles,https://github.com/shunkakinoki/dotfiles,[],2026-02-16 02:19:06.325288+00:00,22.0,17.0,152.048,2.0,25,MIT
+2daa52f9-57df-479d-8a51-252dc4af6770,FSM1/cipher-box,https://github.com/FSM1/cipher-box,[],2026-03-25 00:50:35.140166+00:00,22.0,6.0,526.346,3.0,23,MIT
+a04e7f7c-10b0-4778-8b6d-d68270d945a4,vaayne/anna,https://github.com/vaayne/anna,"[""7beaf89126265399e70e9dad850a5a33ee651d3d""]",2026-03-13 05:25:04.411648+00:00,42.0,24.0,1382.708,20.0,3729,MIT
+3a31d010-303b-487d-a6ff-7d4d6a406b38,obsessiondb/rudel,https://github.com/obsessiondb/rudel,"[""fa5f4ecc7cab5e80a9ca341240595fd4be113a71""]",2026-03-03 07:10:17.183724+00:00,27.0,4.0,315.098,2.0,30,MIT
+0fa21506-9de3-4295-9a8b-188ac719d2ec,bids-standard/bids-utils,https://github.com/bids-standard/bids-utils,"[""216e9b1db862da5f1eab101d025bcbfcde059f73""]",2026-04-03 12:22:11.613918164+00:00,17.0,13.0,369.35,2.0,22,Apache-2.0
+5988f724-985e-40f6-83cf-9e5b60a32d04,entireio/cli,https://github.com/entireio/cli,[],2026-03-05 21:08:01.385399+00:00,9.0,5.0,336.919,4.0,17,MIT
+50b26ae4-a1ec-489c-8b9f-43ed1ca35169,lightfastai/lightfast,https://github.com/lightfastai/lightfast,[],2026-04-10 08:57:34.385464+00:00,14.0,7.0,783.89,3.0,21,Apache-2.0
+fa06eb03-42dc-4573-8ab6-665ab48f3993,obsessiondb/rudel,https://github.com/obsessiondb/rudel,"[""8d3bfd56973e160f02b343116e54ad49a2ab750f"", ""f8993f41d4d8ecafdc5cf04145c04705730b4e3e"", ""fea4afe668b1f2c126791be1df9a2a219c864b23""]",2026-02-17 10:47:25.517944+00:00,21.0,8.0,234.583,2.0,24,MIT
+4193e9d7-e061-402f-8a5d-287120140407,FSM1/cipher-box,https://github.com/FSM1/cipher-box,[],2026-02-13 01:25:45.565164+00:00,40.0,12.0,289.485,2.0,89,MIT
+14390aa2-dd0d-4dd7-a636-12c8f66ea2a1,FSM1/cipher-box,https://github.com/FSM1/cipher-box,[],2026-03-04 23:21:47.050768+00:00,12.0,6.0,1910.63,3.0,5,MIT
+88c65864-3f29-4b06-bbe1-7fab0c4a0142,ClusterCockpit/cc-backend,https://github.com/ClusterCockpit/cc-backend,"[""937984d11f7b9503b58a29afbe3536fe40a2675c""]",2026-03-28 05:55:48.342411+00:00,19.0,7.0,373.313,4.0,26,MIT
+bb6087a2-ec46-453e-90d3-3b799bf0db16,entireio/cli,https://github.com/entireio/cli,[],2026-03-17 19:30:02.603428+00:00,13.0,9.0,504.467,3.0,16,MIT
+74fbb692-dc57-454b-8bfd-ac9f9e351b67,FSM1/cipher-box,https://github.com/FSM1/cipher-box,[],2026-03-24 13:56:05.596615+00:00,23.0,18.0,2105.603,14.0,29,MIT
+cc955527-f968-4362-ae8c-6ffab1276178,entireio/cli,https://github.com/entireio/cli,"[""accb2c734fda8c556a706e3b3afb9b059fa50fa7""]",2026-02-26 03:07:32.102984+00:00,27.0,7.0,173.864,2.0,30,MIT
+cfd57c28-f61a-42df-8ddf-d99b94586ea3,entireio/cli,https://github.com/entireio/cli,[],2026-02-09 07:23:18.324028+00:00,16.0,11.0,919.699,1.0,18,MIT
+09bd4402-d1a9-4874-a390-e6d6136e1b62,bids-standard/bids-utils,https://github.com/bids-standard/bids-utils,"[""4b18c777f3aef7bfbd9df8c939a188dfec3aede7""]",2026-04-07 02:02:55.510116661+00:00,21.0,8.0,221.299,2.0,26,Apache-2.0
+cc530b30-a326-4f03-b3eb-4935a7797048,ClusterCockpit/cc-backend,https://github.com/ClusterCockpit/cc-backend,"[""0325d9e866ec97994e77770ca189838c0ee3b3f0""]",2026-03-24 05:53:13.000464+00:00,30.0,12.0,1829.687,5.0,29,MIT
+9c274b07-208d-4d25-8fff-5a24950ac7d2,nsega/.emacs.d,https://github.com/nsega/.emacs.d,"[""134550b591edd33d0a99b8cbbbb7c02330db6d14""]",2026-02-20 19:11:15.153564+00:00,9.0,5.0,153.478,6.0,7,MIT
+3862df9d-30bf-4257-b008-787c8d160bb2,basher83/tailnet-microservices,https://github.com/basher83/tailnet-microservices,"[""afa89f29905c345d21f04d3e125a4a15af1df00a""]",2026-02-14 11:25:46.270632+00:00,45.0,25.0,385.142,2.0,1857,MIT

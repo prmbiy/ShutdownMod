@@ -1,0 +1,45 @@
+# secrets — never commit
+.env
+
+# python
+.venv/
+.uv/
+.hf_cache/
+.cache/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+
+# run outputs and local data
+*.tmp
+results/
+scripts/deployment_pilot/data/
+scripts/deployment_pilot/results/
+scripts/deployment_pilot/adapted/
+scripts/deployment_pilot/external/
+scripts/deployment_pilot/runs/
+tools/swechat/batch/
+tools/swechat/out/
+tools/swechat/data/
+tools/peval/sets/
+tools/peval/runs/
+tools/peval/results/
+*.pdf
+
+# ignores
+.docs
+.claude
+
+# large archives
+*.zip
+*.tar.gz
+
+# OS noise
+.DS_Store
+Thumbs.db

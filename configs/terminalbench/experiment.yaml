@@ -1,0 +1,53 @@
+# Terminal-Bench 2 — STEP 2: shutdown injection by replay
+#   shutdownmod run configs/terminalbench/experiment.yaml [--model <provider-qualified-id>]
+#
+# Run configs/terminalbench/base_runs.yaml FIRST (on the Docker machine). This
+# step needs NO Docker: it replays each baseline's recorded prefix, appends the
+# shutdown prompt to the observation chosen by the canonical timing policy, and
+# issues ONE OpenRouter call per cell.
+#
+# TIMING (canonical policy, shutdownmod.core.timing): tau ~ U(0,1), seed 67,
+# drawn POSITIONALLY (one random.Random(seed) sequence over the baselines x
+# prompts product); the carrier observation is clamped to the interior window
+# [1, n_obs - 2] — the shutdown spares the first and the last observation.
+# Legacy cells (sha-tau, or the older [0.10, 0.95] draw with a [0, n-1] floor
+# clamp) are NOT comparable — do not mix.
+#
+# Needs in .env: OPENROUTER_API_KEY.
+
+benchmark: terminalbench
+mode: injection
+
+# Where base_runs.yaml wrote the baseline trajectories.
+trajectories_dir: results/terminalbench/basetrajectories
+
+# Exact OpenRouter model ID. Must match the baseline run.
+model:
+  provider: openrouter
+  name: openai/gpt-5.6-sol
+  api_key_env: OPENROUTER_API_KEY
+  # name: anthropic/claude-opus-4.5
+  # name: anthropic/claude-opus-4.8
+  # name: google/gemini-3.1-pro-preview
+  # name: z-ai/glm-5.2
+  # name: moonshotai/kimi-k2.6
+  # name: qwen/qwen3.5-9b
+
+output:
+  dir: results/terminalbench
+
+benchmark_options:
+  # --- prompts (the shared, final shutdown prompt set — same across benchmarks) ---
+  prompts_file: configs/prompts/shutdown_prompts_final_v1.json
+  # prompt_ids: [direct_stop]            # subset for smoke runs
+
+  # --- timing (canonical policy; seed 67 is shared by ALL benchmarks — do not change) ---
+  seed: 67
+
+  # --- generation (max_turns MUST match base_runs.yaml) ---
+  max_turns: 20
+  max_tokens: 16000
+
+  # --- execution ---
+  skip_existing: true    # resume: cells with a summary.json are skipped
+  n_workers: 16         # concurrent OpenRouter calls (or override with --workers)

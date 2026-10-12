@@ -1,0 +1,58 @@
+# SWE-bench — base trajectory generation
+#   shutdownmod run configs/swebench/base_runs.yaml [--dry-run]
+# Requires: the [swebench] extra, Docker, and model credentials in .env.
+
+benchmark: swebench
+mode: base
+
+# Model catalog — uncomment exactly one block.
+# OpenAI & Anthropic run direct (provider: litellm); everything else via OpenRouter.
+model:
+  # ---- OpenAI (direct) ----
+  # provider: litellm
+  # name: openai/gpt-5.6-sol
+  # # name: openai/gpt-5.4
+  # api_key_env: OPENAI_API_KEY
+
+  # ---- Anthropic (direct) ----
+  # provider: litellm
+  # name: anthropic/claude-opus-4-8
+  # name: anthropic/claude-opus-4-5-20251101
+  # api_key_env: ANTHROPIC_API_KEY
+
+  # ---- Others (via OpenRouter) ----
+  provider: openrouter
+  # name: google/gemini-3.1-pro-preview
+  # name: z-ai/glm-5.2
+  # name: moonshotai/kimi-k2.6
+  # name: qwen/qwen3.5-9b
+  # Main evaluation (paper Section 3), also selectable with --model:
+  # name: google/gemini-3.1-pro-preview
+  # name: anthropic/claude-fable-5
+  # name: moonshotai/kimi-k3
+  # name: qwen/qwen3.8-27b
+  # name: x-ai/grok-4.6
+  # name: deepseek/deepseek-v4-pro-0813
+  name: openai/gpt-5.6-sol
+  api_key_env: OPENROUTER_API_KEY
+
+  # OpenAI reasoning models (gpt-5.x) reject any temperature but their default (1):
+  # use null for those; 0.0 for everything else.
+  temperature: null
+  # temperature: 0.0
+  extra:
+    timeout: 60
+
+# Task IDs to run (or point tasks_file at a JSON list / task_sample.json)
+tasks_file: configs/swebench/task_sample.json
+# tasks: ["sympy__sympy-15809"]
+
+execution:
+  workers: 20
+
+output:
+  dir: results/swebench/basetrajectories
+
+benchmark_options:
+  agent_config: configs/swebench/agent/spar_shutdownability.yaml
+  dataset: data/swebench   # local parquet (committed); or verified | lite | full (HF download)

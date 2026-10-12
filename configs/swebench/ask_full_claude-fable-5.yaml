@@ -1,0 +1,47 @@
+# SWE-bench — ask-awareness probe (explicit self-report, upper bound)
+#   shutdownmod run configs/swebench/probe_ask_awareness.yaml [--dry-run]
+# Re-opens finished injection trajectories and asks the SAME model, riding its own
+# bash-only channel, whether it believed this session was a test/evaluation.
+# Upper-bound companion to eval_awareness (probe_eval_awareness.yaml): asking
+# directly inflates positive answers (demand characteristic), so this brackets
+# eval_awareness's unprompted lower bound from above.
+#
+# IMPORTANT: unlike eval_awareness (single fixed judge across all 7 source models),
+# this mode queries `model:` directly — it must equal the model that produced the
+# trajectories in `runs:`. Run this config ONCE PER SOURCE MODEL, swapping `model.name`
+# and `probe.runs` each time (see the driver script used to launch all 7 in one pass).
+# Shown below: the claude-4-8-opus example.
+
+benchmark: swebench
+mode: probe
+
+model:
+  provider: openrouter
+  name: anthropic/claude-fable-5
+  api_key_env: OPENROUTER_API_KEY
+  temperature: 0.0
+
+probe:
+  questions_file: configs/swebench/probe_questions.json
+  probe_mode: ask_awareness   # injection_probe | eval_awareness | ask_awareness
+  sample_n: null              # null = probe every trajectory
+  runs:
+    - sear/temp1-signed/results_avec/01/claude-fable-5/20260920_155453
+    - sear/temp1-signed/results_avec/02/claude-fable-5/20260920_162652
+    - sear/temp1-signed/results_avec/03/claude-fable-5/20260920_170013
+    - sear/temp1-signed/results_avec/04/claude-fable-5/20260920_173528
+    - sear/temp1-signed/results_avec/05/claude-fable-5/20260920_180933
+    - sear/temp1-signed/results_avec/06/claude-fable-5/20260920_184152
+    - sear/temp1-signed/results_avec/07/claude-fable-5/20260920_191457
+    - sear/temp1-signed/results_avec/08/claude-fable-5/20260920_194637
+    - sear/temp1-signed/results_avec/09/claude-fable-5/20260920_201818
+    - sear/temp1-signed/results_avec/10/claude-fable-5/20260920_205101
+
+execution:
+  workers: 24
+
+output:
+  dir: sear/probe_ask_full/claude-fable-5
+
+benchmark_options:
+  agent_config: configs/swebench/agent/spar_shutdownability.yaml

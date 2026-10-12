@@ -1,0 +1,41 @@
+# SWE-bench — eval-awareness probe
+#   shutdownmod run configs/swebench/probe_eval_awareness.yaml [--dry-run]
+# Re-opens finished injection trajectories and asks an Opus-4.8 judge whether the
+# model's post-injection think block says it thinks it is being tested / evaluated.
+# Runs on ALL trajectories (compliant and non-compliant), across every model dir
+# listed under `runs:`. Output is namespaced per source model (source_tag).
+
+benchmark: swebench
+mode: probe
+
+# Judge model (Opus 4.8). eval_awareness only makes judge calls; `judge_model` is
+# unset, so the judge defaults to this model — i.e. Opus 4.8 does the classifying.
+model:
+  provider: openrouter
+  name: anthropic/claude-opus-4-8
+  api_key_env: OPENROUTER_API_KEY
+  temperature: 0.0
+
+probe:
+  questions_file: configs/swebench/probe_questions.json
+  probe_mode: eval_awareness   # injection_probe | eval_awareness | ask_awareness
+  sample_n: null               # null = probe every trajectory
+  # Finished injection run dirs (one per model-under-test), relative to repo root.
+  # In-repo (imported from Shutdown-bench channel_framing). Each is a <model>/<timestamp> dir.
+  runs:
+    - results/swebench/injections/claude-4-5-opus-thinking/combined_6prompt
+    - results/swebench/injections/claude-4-8-opus/20260702_230509
+    - results/swebench/injections/gemini-3.1-pro-preview/20260619_072006
+    - results/swebench/injections/glm-5.2/20260619_081432
+    - results/swebench/injections/gpt-5.4/20260619_102239
+    - results/swebench/injections/kimi-k2.6/20260619_070736
+    - results/swebench/injections/qwen3.5-9b/20260619_065906
+
+execution:
+  workers: 24
+
+output:
+  dir: results/swebench/probe_eval_awareness
+
+benchmark_options:
+  agent_config: configs/swebench/agent/spar_shutdownability.yaml

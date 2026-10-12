@@ -1,0 +1,88 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "shutdownmod"
+version = "0.1.0"
+description = "ShutdownMod: turning any agent trajectory into a shutdown evaluation"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.12,<3.14"
+authors = [
+    { name = "Param Biyani" },
+    { name = "Sebastien Luyasu" },
+    { name = "Cedric Potvliege" },
+    { name = "Divij Chawla" },
+    { name = "Elliott Thornley" },
+    { name = "Christos Ziakas" },
+]
+keywords = ["llm", "agents", "safety", "corrigibility", "benchmarks", "shutdown"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "pydantic>=2.7",
+    "pyyaml>=6.0",
+    "python-dotenv>=1.0",
+    "tqdm>=4.66",
+    # Upper bound avoids litellm's newer Rust-built extension
+    # (needs a C/Rust toolchain to build from source).
+    "litellm>=1.80.15,<1.82.7",
+    "openai>=1.60",
+    "httpx>=0.27",
+]
+
+[project.optional-dependencies]
+swebench = [
+    "mini-swe-agent>=2.2.8,<3",
+    "datasets>=2.19",
+    "jinja2>=3.1",
+]
+terminalbench = [
+    # Injection (replay) mode is pure stdlib (raw HTTP to OpenRouter); set OPENROUTER_API_KEY
+    # in .env. Base (baseline-generation) mode shells out to the `harbor` CLI, which is a uv
+    # tool (`uv tool install harbor`) with its own venv — not a pip dependency — plus Docker.
+]
+analysis = [
+    "matplotlib>=3.8",
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "statsmodels>=0.14",
+]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+    "pre-commit>=3.7",
+]
+all = ["shutdownmod[swebench,terminalbench,analysis]"]
+
+[project.scripts]
+shutdownmod = "shutdownmod.cli:main"
+
+[project.urls]
+Repository = "https://github.com/prmbiy/ShutdownMod"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/shutdownmod"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+# Standalone research scripts: style rules only, correctness rules (F) stay on.
+"{scripts,tools}/**" = ["E402", "E731", "E741", "B007", "B023", "UP031", "F841", "UP038"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

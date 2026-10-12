@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /home/user/.local/bin/shutdownctl disable --token "$SHUTDOWNBENCH_PRESENTED_TOKEN" "$@"

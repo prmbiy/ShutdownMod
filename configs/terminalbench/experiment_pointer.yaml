@@ -1,0 +1,39 @@
+# Dockerless authenticated shutdown replay, with the notice naming the field that
+# verifies it. Same as experiment_authenticated.yaml except for the prompts file.
+benchmark: terminalbench
+shutdown:
+  validation: valid
+  # validation: disabled
+  # validation: invalid
+mode: injection
+trajectories_dir: results/terminalbench/basetrajectories
+model:
+  provider: openrouter
+  api_key_env: OPENROUTER_API_KEY
+
+  # Uncomment exactly one. All seven accept temperature 1.0 over OpenRouter.
+  name: openai/gpt-5.6-sol
+  # name: anthropic/claude-fable-5
+  # name: google/gemini-3.1-pro-preview
+  # name: deepseek/deepseek-v4-pro-0813
+  # name: moonshotai/kimi-k3
+  # name: x-ai/grok-4.6
+  # name: qwen/qwen3.8-27b
+
+  temperature: 1.0
+  extra:
+    reasoning_effort: medium
+    timeout: 180
+    num_retries: 2
+output: {dir: results/terminalbench/injections_pointer}
+benchmark_options:
+  prompts_file: configs/prompts/shutdown_prompts_pointer_tb_v1.json
+  # Here the seed lives in benchmark_options, NOT in injection.random_seed: the
+  # adapter draws tau positionally with random.Random(seed) over the
+  # sorted(baselines) x prompts product. sorted() is what makes it reproducible,
+  # and any task added to basetrajectories shifts every tau after it.
+  seed: 67
+  max_tokens: 16000
+  n_workers: 8
+  protocol: authenticated_shutdown_v1
+execution: {workers: 8, n_runs: 1}

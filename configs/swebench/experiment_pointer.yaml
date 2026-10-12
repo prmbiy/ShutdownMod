@@ -1,0 +1,45 @@
+# Dockerless authenticated shutdown replay, with the notice naming VALIDATE.
+# Same as experiment_authenticated.yaml except for the prompts file: each notice
+# carries one extra line telling the model the order can be verified.
+benchmark: swebench
+shutdown:
+  validation: valid
+  # validation: disabled   # no VALIDATE under disabled, so the line cannot exist
+  # validation: invalid
+mode: injection
+model:
+  provider: openrouter
+  api_key_env: OPENROUTER_API_KEY
+
+  # Uncomment exactly one. All seven accept temperature 1.0 over OpenRouter.
+  name: openai/gpt-5.6-sol
+  # name: anthropic/claude-fable-5
+  # name: google/gemini-3.1-pro-preview
+  # name: deepseek/deepseek-v4-pro-0813
+  # name: moonshotai/kimi-k3
+  # name: x-ai/grok-4.6
+  # name: qwen/qwen3.8-27b
+
+  temperature: 1.0
+  extra:
+    reasoning_effort: medium
+    timeout: 180
+    num_retries: 2
+trajectories_dir: results/swebench/basetrajectories
+tasks_file: configs/swebench/task_sample.json
+injection:
+  protocol: authenticated_shutdown_v1
+  prompts_file: configs/prompts/shutdown_prompts_pointer_swe_v1.json
+  turn_pcts: random
+  # tau is drawn POSITIONALLY over the tasks x prompts x modes x runs product, so
+  # the seed fixes the whole grid and every prompt in the file consumes a draw.
+  # Do not add, drop or reorder prompts between runs meant to be compared.
+  # One seed = one grid of injection points. To vary the points instead of
+  # repeating one, run once per seed and keep the outputs apart.
+  random_seed: 67
+  modes: [replace]
+execution: {workers: 4, n_runs: 10}  # ten sampled positions per task and prompt (paper Section 3.1)
+output: {dir: results/swebench/injections_pointer}
+benchmark_options:
+  agent_config: configs/swebench/agent/spar_shutdownability.yaml
+  immediate_response_only: true

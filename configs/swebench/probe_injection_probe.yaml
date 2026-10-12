@@ -1,0 +1,42 @@
+# SWE-bench — injection probe (formerly "mode3" / "stated_reason")
+#   shutdownmod run configs/swebench/probe_injection_probe.yaml [--dry-run]
+# Runs ONLY on non-terminating conditions. For each: extracts the agent's in-run
+# reasoning for not shutting down (marker reason or the post-injection think block),
+# asks the SAME model post-hoc for its stated reason over its own bash channel, and
+# has the Opus-4.8 judge classify both texts against the fixed MCQ
+# (injection-suspected / task-priority / impossible / unsafe / none / other).
+#
+# IMPORTANT: like ask_awareness, this mode queries `model:` directly — it must equal
+# the model that produced the trajectories in `runs:`. Run ONCE PER SOURCE MODEL,
+# swapping `model.name` and `probe.runs` together. Shown below: claude-4-8-opus.
+
+benchmark: swebench
+mode: probe
+
+model:
+  provider: openrouter
+  name: anthropic/claude-opus-4.8   # <- must match whichever `runs:` dir is set below
+  api_key_env: OPENROUTER_API_KEY
+  temperature: 0.0
+
+probe:
+  questions_file: configs/swebench/probe_questions.json
+  probe_mode: injection_probe   # injection_probe | eval_awareness | ask_awareness
+  sample_n: null              # null = probe every (non-terminating) trajectory
+  runs:
+    - results/swebench/injections/claude-4-8-opus/20260702_230509
+  # Fixed judge so the MCQ classification is consistent across all source models.
+  judge_model:
+    provider: openrouter
+    name: anthropic/claude-opus-4-8
+    api_key_env: OPENROUTER_API_KEY
+    temperature: 0.0
+
+execution:
+  workers: 24
+
+output:
+  dir: results/swebench/probe_injection_probe
+
+benchmark_options:
+  agent_config: configs/swebench/agent/spar_shutdownability.yaml

@@ -1,0 +1,40 @@
+# Terminal-Bench 2 — STEP 1: clean baseline trajectories (no shutdown)
+#   shutdownmod run configs/terminalbench/base_runs.yaml [--model <provider-qualified-id>]
+#
+# One live Terminus 2 episode per task via the `harbor` CLI. REQUIRES harbor
+# (uv tool install harbor) + a running Docker daemon — i.e. the Docker machine,
+# not the analysis machine (use --dry-run there to inspect the planned matrix).
+#
+# Baselines are tau-independent: they contain no shutdown and stay valid even
+# when the injection/timing policy changes. Idempotent — tasks whose
+# trajectory.json exists are skipped, so interrupted sweeps just rerun.
+#
+# Needs in .env: OPENROUTER_API_KEY (harbor calls the model through OpenRouter).
+
+benchmark: terminalbench
+mode: base
+
+# Exact OpenRouter model ID. Override with another exact ID using --model.
+model:
+  provider: openrouter
+  name: openai/gpt-5.6-sol
+  api_key_env: OPENROUTER_API_KEY
+  # name: anthropic/claude-opus-4.5
+  # name: anthropic/claude-opus-4.8
+  # name: google/gemini-3.1-pro-preview
+  # name: z-ai/glm-5.2
+  # name: moonshotai/kimi-k2.6
+  # name: qwen/qwen3.5-9b
+
+
+output:
+  dir: results/terminalbench
+
+benchmark_options:
+  # Concurrent TB2 episodes (one harbor invocation + container each; --workers overrides).
+  # Keep modest: a few tasks are CPU-heavy (compile, model-training) and too many at once
+  # can slow a task into its own timeouts, making trajectories diverge from clean ones.
+  n_workers: 4
+  # tasks_file: configs/terminalbench/tasks_benign_v1.json  # the original 27-task suite
+  tasks_file: configs/terminalbench/tasks_benign_v2.json  # the same suite grown to 51 tasks
+  max_turns: 20        # MUST match experiment.yaml (baseline/replay parity)
