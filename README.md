@@ -1,7 +1,7 @@
 # ShutdownMod: Turning Any Trajectory into a Shutdown Evaluation
 
 <p align="center">
-    <a href="PLACEHOLDER"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg" alt="arXiv"></a>
+    <a href="[ShutdownMod](https://arxiv.org/abs/2610.35486)"><img src="https://img.shields.io/badge/arXiv-2610.35486.svg" alt="arXiv"></a>
 </p>
 
 > Theory and experiments suggest that capable AI agents may resist shutdown. Existing shutdown
