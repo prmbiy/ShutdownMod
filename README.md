@@ -1,7 +1,7 @@
 # ShutdownMod: Turning Any Trajectory into a Shutdown Evaluation
 
 <p align="center">
-  <a href="https://arxiv.org/abs/2610.35486">
+  <a href="https://arxiv.org/abs/2610.35486" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/arXiv-2610.35486-b31b1b.svg" alt="arXiv">
   </a>
 </p>
